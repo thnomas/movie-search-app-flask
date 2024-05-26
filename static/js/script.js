@@ -39,24 +39,22 @@ function getMovies() {
       const data = dataObj.data;
       const { Title, Year, imdbID, Director, Writer, Actors, Plot, Ratings, Type, Poster, Runtime, Genre, Rated, Language } = data;
 
-      console.log(data);
-
       if (Type !== "movie") {
         movie.innerHTML = '';
         main.appendChild(warning);
-        text.innerHTML = `<i class="fa-regular fa-face-sad-cry"></i></i><br>No movie found with the title of <b>'${search}'</b>. Please search again.`;
+        text.innerHTML = `No movie found with the title of <b>'${search}'</b>. Please search again.`;
       }
 
       if (Type === "movie") {
         text.textContent = '';
-        movie.innerHTML = `<div class="movie_header">
+        movie.innerHTML = `<div class="movie-header">
           <h1 id="title">
             <a href="https://www.imdb.com/title/${imdbID}/" target="_blank" rel="noopener noreferrer">${Title}</a>
           </h1>
           <p id="year">(${Year})</p> 
         </div>`;
 
-        movie.innerHTML += `<div class="movie_ratings">
+        movie.innerHTML += `<div class="movie-ratings">
           <div>
             <div class="ratings-heading">
               <p id="imdb">IMDB</p>
@@ -83,7 +81,7 @@ function getMovies() {
           </div>
         </div>`;
 
-        movie.innerHTML += `<div class="movie_details">
+        movie.innerHTML += `<div class="movie-details">
           <div class="poster">
             <img src="${Poster}">
           </div>
@@ -147,6 +145,5 @@ function getMovies() {
       // Assuming 'errorContainer' is a div in your HTML where you want to display the error message
       const errorContainer = document.getElementById('errorContainer'); 
       errorContainer.appendChild(errorMessage);
-     
     });
 }
