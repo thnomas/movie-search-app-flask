@@ -1,5 +1,7 @@
-# movie-search
-A simple movie search using the omdb API.
+# movie-search ⭐ 📽️
+A simple movie search using the omdb API with a Flask backend. 
 
 ~~### Deployed to heroku:~~
-~~findafilm.herokuapp.com~~ ![#f03c15]RIP heroku`#f03c15`
+~~findafilm.herokuapp.com~~ 💀RIP heroku💀
+
+🚀 https://movies.thnomas.com/
