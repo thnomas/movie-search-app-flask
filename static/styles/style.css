@@ -20,7 +20,13 @@ body {
   background-color: var(--background);
 }
 
-p,a,h1,h2,h3,input,span{
+p,
+a,
+h1,
+h2,
+h3,
+input,
+span {
   font-family: 'Sora', sans-serif;
 }
 
@@ -190,7 +196,7 @@ header h2 {
 }
 
 .details-heading p {
-  color:#292929;
+  color: #292929;
   text-align: left;
   font-size: 0.9em;
   font-weight: 700;
